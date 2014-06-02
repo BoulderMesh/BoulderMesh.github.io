@@ -989,6 +989,36 @@ html.flui-preload body * {
 #flui-modal #flui-confirm:before {
   content: "Ok";
 }
+@font-face {
+  font-family: Lora;
+  src: url("../fonts/Lora-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lora;
+  src: url("../fonts/Lora-Bold.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lora;
+  src: url("../fonts/Lora-Italic.ttf") format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: Lora;
+  src: url("../fonts/Lora-BoldItalic.ttf") format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: Dosis;
+  src: url("../fonts/Dosis-Regular.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   overflow: auto;
 }
@@ -1134,6 +1164,7 @@ body {
 #articles h5,
 #articles h6 {
   color: #636f7a;
+  font-family: Dosis, sans-serif;
   font-weight: normal;
 }
 #articles time {
@@ -1141,7 +1172,9 @@ body {
   display: block;
 }
 #articles p {
+  font-family: Lora, sans-serif;
   line-height: 1.6em;
+  text-align: justify;
 }
 #articles p code {
   display: inline-block;
@@ -1186,6 +1219,7 @@ body {
 #activity h4,
 #activity h5,
 #activity h6 {
+  font-family: Dosis, sans-serif;
   font-weight: normal;
 }
 #activity #recent-posts a {
@@ -1227,9 +1261,13 @@ body {
   font-weight: bold;
   margin-bottom: 10px;
 }
+#bottom-inner h1,
+#bottom-inner h2,
 #bottom-inner h3,
 #bottom-inner h4,
-#bottom-inner h5 {
+#bottom-inner h5,
+#bottom-inner h6 {
+  font-family: Dosis, sans-serif;
   font-weight: normal;
 }
 #bottom-inner #site-info {
